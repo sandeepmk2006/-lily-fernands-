@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-neutral-900 bg-[#FDFDFD];
+  }
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+}
+
+.bento-card {
+  @apply bg-white border border-neutral-100 rounded-[2rem] p-8 transition-all duration-500 hover:shadow-2xl hover:shadow-neutral-200/50 hover:-translate-y-1;
+}
